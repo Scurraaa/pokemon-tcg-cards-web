@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
+  height: 8rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 25px 0 40px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 3.5rem;
+  font-weight: 700;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  /* background-color: black; */
+  min-height: 100vh;
+  padding: 0 25px 0 25px;
+}
+
+.card {
+  height: 25rem;
+  width: 30rem;
+  display:flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-label {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.className {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.pageloading-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96vh;
+}
+
+.input-section {
+  display: block;
+}
+
+.search-input {
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #DDDFE2;
+  background-color: white;
+  margin-bottom: 10px;
+}
+
+.search-input-value {
+  border: none;
+  background-color: transparent;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 20px;
+}
+
+.search-input-value:focus {
+  outline: none;
+  background-color: #ecf4f3;
+  border-radius: 8px;
+}
+
+.search-btn {
+  height: 48px;
+  color: #fff;
+  background-color: #0275d8;
+  font-size: 18px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  padding: 0 12px;
+  border-color: transparent;
+  border-radius: 8px;
+  letter-spacing: 0.20;
+  margin-bottom: 5px;
+  transition: background-color 200ms ease-in;
 }
